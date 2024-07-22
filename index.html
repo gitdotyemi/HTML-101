@@ -22,6 +22,9 @@
                 <li>
                     <a href="#vacation">Planning a Vacation</a>
                 </li>
+                <li>
+                    <a href="#contact">Contact Me</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -63,7 +66,7 @@
                     <caption>My Daily Schedule</caption>
                     <thead>
                         <tr>
-                            <th>&nbsp;</th>
+                            <th >&nbsp;</th>
                             <th scope="col">Time</th>
                             <th scope="col">Activity</th>
                         </tr>
@@ -80,9 +83,9 @@
                         <tr>
                             <th scope="row">Break</th>
                             <td>
-                                <time datetime="11:00">11am</time> - <time datetime="12:00">12pm</time>
+                                <time datetime="11:00">11am</time> - <time datetime="12:00">12am</time>
                             </td>
-                            <td>Lunck break</td>
+                            <td>Lunch break</td>
                         </tr>
                         <tr>
                             <th scope="row">Afternoon</th>
@@ -93,7 +96,7 @@
                         </tr>
                         <tr>
                             <th scope="row">Evening</th>
-                            <td rowspan="2">All other time</td>
+                            <td rowspan="2">All other things</td>
                             <td>Free time</td>
                         </tr>
                         <tr>
@@ -156,6 +159,114 @@
                     <dd>These are also cold.</dd>
                 </dl>
             </section>
+        </article>
+
+        <hr>
+
+        <article id="contact">
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <p>
+                        <label for="firstName">First Name:</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="First Name" required autocomplete="on">
+                    </p>
+                    <p>
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Last Name" required autocomplete="on">
+                    </p>
+                    <p>
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" placeholder="Password" required autocomplete="on">
+                    </p>
+                    <p>
+                        <label for="phone">Telephone No:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="000-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    </p>
+                    <p>
+                        <label for="decade">Favorite Decade:</label>
+                        <input type="number" name="decade" id="decade" placeholder="Select Decade" min="1950" max="2020" step="10" value="1980">
+                    </p>
+                    <p>
+                        <label for="coffee">Favorite Coffee:</label>
+                        <select name="coffee" id="coffee" multiple size="3">
+                            <optgroup label="coffees">
+                                <option value="regularCoffee">Regular Coffee</option>
+                                <option value="icedCoffee">Iced Coffee</option>
+                            </optgroup>
+                            <optgroup label="espressoDrinks">
+                                <option value="latte">Latte</option>
+                                <option value="cappucciono">Cappuccino</option>
+                                <option value="cortado">Cortado</option>
+                                <option value="americano">Americano</option>
+                            </optgroup>
+                            <option value="others">Others</option>
+                        </select>
+                    </p>
+                    <!-- <p>
+                        <label for="coffee">Favorite Coffee:</label>
+                        <input type="text" name="coffee" id="coffee" list="coffeeList">
+                        <datalist id="coffeeList">
+                            <option value="Regular Coffee"></option>
+                            <option value="Iced Coffee"></option>
+                            <option value="Latte"></option>
+                            <option value="Cappuccino"></option>
+                            <option value="Cortado"></option>
+                            <option value="Americano"></option>
+                            <option value="Others"></option>
+                        </datalist>
+                    </p> -->
+                </fieldset>
+
+                <br>
+    
+                <fieldset>
+                    <legend>Favorite Food?</legend>
+                    <p>
+                        <input type="radio" name="food" id="tacos" value="tacos">
+                        <label for="food">Tacos</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="pizza" value="pizza">
+                        <label for="food">Pizza</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="othersFood" value="othersFood">
+                        <label for="food">Others</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Do you own pets?</legend>
+                    <p>
+                        <input type="checkbox" name="pet" id="dog" value="dog">
+                        <label for="pet">Dog</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pet" id="cat" value="cat">
+                        <label for="pet">Cat</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pet" id="fish" value="fish">
+                        <label for="pet">Fish</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pet" id="otherPet" value="otherPet">
+                        <label for="pet">Others</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Send me a note</legend>
+                    <p>
+                        <label for="message">Your message:</label>
+                        <textarea name="message" id="message" placeholder="Type your message here" cols="30" rows="10"></textarea>
+                    </p>
+                </fieldset>
+                <br>
+                <button type="button">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
         </article>
     </main>
 
