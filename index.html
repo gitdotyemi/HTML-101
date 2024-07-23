@@ -164,6 +164,8 @@
         <hr>
 
         <article id="contact">
+            <h2>Contact Me</h2>
+            <p>I'd like to hear from you!</p>
             <form action="https://httpbin.org/get" method="get">
                 <fieldset>
                     <legend>Personal Information</legend>
@@ -191,16 +193,16 @@
                         <label for="coffee">Favorite Coffee:</label>
                         <select name="coffee" id="coffee" multiple size="3">
                             <optgroup label="coffees">
-                                <option value="regularCoffee">Regular Coffee</option>
-                                <option value="icedCoffee">Iced Coffee</option>
+                                <option value="Regular Coffee">Regular Coffee</option>
+                                <option value="Iced Coffee">Iced Coffee</option>
                             </optgroup>
-                            <optgroup label="espressoDrinks">
+                            <optgroup label="Espresso Drinks">
                                 <option value="latte">Latte</option>
-                                <option value="cappucciono">Cappuccino</option>
-                                <option value="cortado">Cortado</option>
-                                <option value="americano">Americano</option>
+                                <option value="Cappucciono">Cappuccino</option>
+                                <option value="Cortado">Cortado</option>
+                                <option value="Americano">Americano</option>
                             </optgroup>
-                            <option value="others">Others</option>
+                            <option value="Others">Others</option>
                         </select>
                     </p>
                     <!-- <p>
@@ -224,15 +226,15 @@
                     <legend>Favorite Food?</legend>
                     <p>
                         <input type="radio" name="food" id="tacos" value="tacos">
-                        <label for="food">Tacos</label>
+                        <label for="tacos">Tacos</label>
                     </p>
                     <p>
                         <input type="radio" name="food" id="pizza" value="pizza">
-                        <label for="food">Pizza</label>
+                        <label for="pizza">Pizza</label>
                     </p>
                     <p>
-                        <input type="radio" name="food" id="othersFood" value="othersFood">
-                        <label for="food">Others</label>
+                        <input type="radio" name="food" id="otherFood" value="otherFood">
+                        <label for="otherFood">Others</label>
                     </p>
                 </fieldset>
                 <br>
@@ -240,19 +242,19 @@
                     <legend>Do you own pets?</legend>
                     <p>
                         <input type="checkbox" name="pet" id="dog" value="dog">
-                        <label for="pet">Dog</label>
+                        <label for="dog">Dog</label>
                     </p>
                     <p>
                         <input type="checkbox" name="pet" id="cat" value="cat">
-                        <label for="pet">Cat</label>
+                        <label for="cat">Cat</label>
                     </p>
                     <p>
                         <input type="checkbox" name="pet" id="fish" value="fish">
-                        <label for="pet">Fish</label>
+                        <label for="fish">Fish</label>
                     </p>
                     <p>
                         <input type="checkbox" name="pet" id="otherPet" value="otherPet">
-                        <label for="pet">Others</label>
+                        <label for="otherPet">Others</label>
                     </p>
                 </fieldset>
                 <br>
@@ -264,7 +266,8 @@
                     </p>
                 </fieldset>
                 <br>
-                <button type="button">Submit</button>
+                <button type="submit">Submit</button>
+                <button type="submit" formaction="http://httpbin.org/post" formmethod="post">Post</button>
                 <button type="reset">Reset</button>
             </form>
         </article>
